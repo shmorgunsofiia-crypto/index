@@ -59,6 +59,7 @@ a {
 }
 
 .last {
+  background-color: #2F303A;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -156,4 +157,60 @@ a {
   height: 38px;
    background-color: #2196F3;
   color:#FFFFFF ;
+}
+
+.hero-title {
+  background-color: #2F303A;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+    font-weight: 696;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.studio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+letter-spacing: 0.02em;
+ font-size: 14px;
+ color: #2196F3 ;
+}
+
+.second {
+  font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.contacts {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.gmail {
+  font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+}
+
+.numbers {
+  font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
 }
