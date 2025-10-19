@@ -55,7 +55,7 @@ a {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color:#000000;
 }
 
 .last {
@@ -213,4 +213,14 @@ letter-spacing: 0.02em;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
+}
+
+.email {
+  width: 135px;
+    height: 16px;
+    color: #2196F3;
+}
+
+.color {
+   color: #2196F3
 }
