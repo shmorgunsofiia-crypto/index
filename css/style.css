@@ -4,7 +4,7 @@ a {
   font-weight: 200;
 }
 
-.main-title {
+.about-title {
   line-height: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -12,14 +12,14 @@ a {
   font-family: "Roboto";
 }
 
-.main-title + p {
+.about-title + p {
   font-family: "Roboto", sans-serif;
   line-height: 24px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-.second-main {
+.about-names {
   font-family: "Roboto";
   line-height: 16px;
   font-weight: 600;
@@ -27,7 +27,7 @@ a {
   text-transform: uppercase;
 }
 
-.third-main {
+.about-planning {
   font-family: "Roboto";
   line-height: 16px;
   font-weight: 700;
@@ -35,7 +35,7 @@ a {
   text-transform: uppercase;
 }
 
-.final-main {
+.about-tech {
   font-family: "Roboto";
   line-height: 16px;
   font-weight: 700;
@@ -43,14 +43,14 @@ a {
   text-transform: uppercase;
 }
 
-.work {
+.work-title {
   font-family: "Roboto";
   line-height: 42px;
   font-weight: 600;
   letter-spacing: 3px;
 }
 
-.first {
+.header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -58,7 +58,7 @@ a {
   color:#000000;
 }
 
-.last {
+.register-footer {
   background-color: #2F303A;
   font-family: "Raleway";
   font-weight: 700;
@@ -67,7 +67,7 @@ a {
   color: #2196f3;
 }
 
-.our-team {
+.team-title {
   font-family: "Roboto";
   line-height: 42px;
   font-weight: 600;
@@ -112,7 +112,7 @@ a {
   height: 260px;
 }
 
-.team-poster {
+.main-poster {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -121,7 +121,7 @@ a {
   color: #212121;
 }
 
-.main-item {
+.hero-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -223,4 +223,13 @@ letter-spacing: 0.02em;
 
 .color {
    color: #2196F3
+}
+
+.about-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
