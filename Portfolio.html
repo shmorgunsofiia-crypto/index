@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,82 +21,86 @@
   </head>
   <body>
     <header class="header">
-       <h1 class="header-logo"><span class="color">Web</span>Studio</h1>
-      <nav class="header-nav">
+      <div class="container">
+        <h1 class="header-logo"><span class="color">Web</span>Studio</h1>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li><a class="studio" href="./Portfolio.html">Студія</a></li>
+            <li><a class="second" href="./index.html">Портфоліо</a></li>
+            <li><a class="contacts" href="">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="header-list">
-          <li><a class="studio" href="./Portfolio.html">Студія</a></li>
-          <li><a class="second" href="./index.html">Портфоліо</a></li>
-          <li><a class="contacts" href="">Контакти</a></li>
+          <li class="header-item">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="header-item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-list">
-        <li class="header-item">
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-        <li class="header-item">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-      <button class="everyone">Усі</button>
-      <button class="names">Веб-сайти</button>
-      <button class="names">Додатки</button>
-      <button class="names">Дизайн</button>
-      <button class="names">Маркетинг</button>
+        <button class="everyone">Усі</button>
+        <button class="names">Веб-сайти</button>
+        <button class="names">Додатки</button>
+        <button class="names">Дизайн</button>
+        <button class="names">Маркетинг</button>
+      </div>
     </header>
     <main>
-      <ul class="main-list">
-        <li class="main-item">
-          <img class="main-photo" src="images/workers.png" alt="workers" />
-          <h3 class="main-poster">Технокряк</h3>
-          <p class="main-web">Веб-сайт</p>
-        </li>
-        <li class="main-item">
-          <img class="main-photo" src="./images/players.png" alt="players" />
-          <h3 class="main-poster">Постер New Orlean vs Golden Star</h3>
-          <p class="main-design">Дизайн</p>
-        </li>
-        <li class="main-item">
-          <img
-            class="main-photo"
-            src="./images/seafood.png"
-            alt="seafood restarurant"
-          />
-          <h3 class="main-poster">Ресторан Seafood</h3>
-          <p class="main-design">Додаток</p>
-        </li>
-        <li class="main-item">
-          <img
-            class="main-photo"
-            src="./images/headphones.png"
-            alt="headphones"
-          />
-          <h3 class="main-poster">Проєкт Prime</h3>
-          <p class="main-design">Маркетинг</p>
-        </li>
-        <li class="main-item">
-          <img class="main-photo" src="./images/boxes.png" alt="boxes" />
-          <h3 class="main-poster">Проєкт Boxes</h3>
-          <p class="main-design">Додаток</p>
-        </li>
-        <li class="main-item">
-          <img class="main-photo" src="./images/book.png" alt="book" />
-          <h3 class="main-poster">Видання Limited Edition</h3>
-          <p class="main-design">Дизайн</p>
-        </li>
-        <li class="main-item">
-          <img class="main-photo" src="./images/nametag.png" alt="name-tag" />
-          <h3 class="mainn-poster">Проєкт LAB</h3>
-          <p class="main-design">Маркетинг</p>
-        </li>
-        <li class="main-item">
-          <img class="team-photo" src="./images/working.png" alt="working" />
-          <h3 class="main-poster">Growing Business</h3>
-          <p class="main-design">Додаток</p>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="main-list">
+          <li class="main-item">
+            <img class="main-photo" src="images/workers.png" alt="workers" />
+            <h3 class="main-poster">Технокряк</h3>
+            <p class="main-web">Веб-сайт</p>
+          </li>
+          <li class="main-item">
+            <img class="main-photo" src="./images/players.png" alt="players" />
+            <h3 class="main-poster">Постер New Orlean vs Golden Star</h3>
+            <p class="main-design">Дизайн</p>
+          </li>
+          <li class="main-item">
+            <img
+              class="main-photo"
+              src="./images/seafood.png"
+              alt="seafood restarurant"
+            />
+            <h3 class="main-poster">Ресторан Seafood</h3>
+            <p class="main-design">Додаток</p>
+          </li>
+          <li class="main-item">
+            <img
+              class="main-photo"
+              src="./images/headphones.png"
+              alt="headphones"
+            />
+            <h3 class="main-poster">Проєкт Prime</h3>
+            <p class="main-design">Маркетинг</p>
+          </li>
+          <li class="main-item">
+            <img class="main-photo" src="./images/boxes.png" alt="boxes" />
+            <h3 class="main-poster">Проєкт Boxes</h3>
+            <p class="main-design">Додаток</p>
+          </li>
+          <li class="main-item">
+            <img class="main-photo" src="./images/book.png" alt="book" />
+            <h3 class="main-poster">Видання Limited Edition</h3>
+            <p class="main-design">Дизайн</p>
+          </li>
+          <li class="main-item">
+            <img class="main-photo" src="./images/nametag.png" alt="name-tag" />
+            <h3 class="mainn-poster">Проєкт LAB</h3>
+            <p class="main-design">Маркетинг</p>
+          </li>
+          <li class="main-item">
+            <img class="team-photo" src="./images/working.png" alt="working" />
+            <h3 class="main-poster">Growing Business</h3>
+            <p class="main-design">Додаток</p>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer>
-       <h2 class="register-footer">Web <span class="color"></span>Studio</h2>
+      <h2 class="register-footer">Web <span class="color"></span>Studio</h2>
       <address>
         м. Київ,<br />
         пр-т Лесі Українки, 26
