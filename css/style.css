@@ -50,6 +50,7 @@ a {
 }
 
 .work-title {
+  text-align: center;
   font-family: "Roboto";
   line-height: 42px;
   font-weight: 600;
@@ -181,7 +182,7 @@ a {
     text-align: center;
     color: #fff;
     width: 696px;
-    
+
 }
 .studio {
   font-family: "Roboto", sans-serif;
@@ -252,7 +253,6 @@ letter-spacing: 0.02em;
 }
 
 .container {
-  outline:solid red ;
   width: 1200px;
 padding-left:16px ;
 padding-right:16px ;
@@ -260,3 +260,34 @@ padding-right:16px ;
   margin-left: auto;
 }
 
+
+.main-photo {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+header-nav {
+  margin-right: auto;
+  margin-left: 93px;
+}
+
+header-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-box {
+  outline: solid red;
+}
+
+hero-container {
+  display: flex;
+  outline: solid green;
+}
