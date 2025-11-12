@@ -18,34 +18,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <h2 class="header-logo"><span class="color">Web</span>Studio</h2>
-        <nav class="header-nav">
+        <div class="header-container">
+          <h2 class="header-logo"><span class="color">Web</span>Studio</h2>
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="studio" href="./Portfolio.html">Студія</a>
+              </li>
+              <li class="header-item">
+                <a class="second" href="./index.html">Портфоліо</a>
+              </li>
+              <li class="header-item">
+                <a class="contacts" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="header-list">
             <li class="header-item">
-              <a class="studio" href="./Portfolio.html">Студія</a>
+              <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li class="header-item">
-              <a class="second" href="./index.html">Портфоліо</a>
-            </li>
-            <li class="header-item">
-              <a class="contacts" href="">Контакти</a>
+              <a class="email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header-list">
-          <li class="header-item">
-            <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-          <li class="header-item">
-            <a class="email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <section class="hero">
@@ -57,35 +60,39 @@
     <main>
       <section class="about">
         <div class="container">
-          <ul class="about-list">
-             <h2 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h2>
-          <p class="about-text">
-            Ідейні міркування, і навіть початок повсякденної роботи з формування
-            позиції.
-          </p>
-          </ul>
-          <ul class="about-list">
-            <li class="about-item">
-              <h2 class="about-names">ПУНКТУАЛЬНІСТЬ</h2>
+          <div class="about-container">
+            <ul class="about-list">
+              <li>
+                <h3 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="about-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
-            </li>
-            <li class="about-item">
-              <h3 class="about-planning">ПЛАНУВАННЯ</h3>
-              <p class="about-text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="about-item">
-              <h3 class="about-tech">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="about-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
+              </li>
+            
+              <li class="about-item">
+                <h2 class="about-names">ПУНКТУАЛЬНІСТЬ</h2>
+                <p class="about-text">
+                  Завдання організації, особливо рамки і місце навчання кадрів
+                  тягне у себе.
+                </p>
+              </li>
+              <li class="about-item">
+                <h3 class="about-planning">ПЛАНУВАННЯ</h3>
+                <p class="about-text">
+                  Так само консультація з широким активом значною мірою
+                  зумовлює.
+                </p>
+              </li>
+              <li class="about-item">
+                <h3 class="about-tech">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="about-text">
+                  Значимість цих проблем настільки очевидна, що реалізація
+                  планових завдань.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="work">
@@ -163,7 +170,7 @@
     </main>
     <footer>
       <h2 class="register-footer"><span class="color">Web</span>Studio</h2>
-      <address>
+      <address class="address">
         м. Київ, <br />
         пр-т Лесі Українки,26
       </address>
