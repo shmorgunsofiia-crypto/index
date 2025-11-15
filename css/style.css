@@ -140,6 +140,7 @@ a {
   gap: 30px;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .hero-text {
@@ -172,10 +173,12 @@ a {
 }
 
 .names {
+  border-radius: 4px;
   width: 125px;
   height: 38px;
   color: #212121;
-  background-color: #ffffff;
+  background: #f5f4fa;
+  gap: 8px;
 }
 
 .everyone {
@@ -183,7 +186,7 @@ a {
   height: 38px;
   background-color: #2196f3;
   color: #ffffff;
-  padding-bottom: 0px;
+  gap: 8px;
 }
 
 .hero-title {
@@ -280,6 +283,7 @@ a {
   padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
+  outline: solid red;
 }
 
 .header-list {
@@ -334,8 +338,8 @@ header-nav {
   margin-right: auto;
   margin-left: auto;
   width: 216px;
-height: 50px;
-justify-content: center;
+  height: 50px;
+  justify-content: center;
 }
 
 .about-list {
@@ -363,6 +367,10 @@ justify-content: center;
 .main-list {
   display: flex;
   gap: 30px;
+}
+
+.main-item {
+  max-width: 370px;
 }
 
 .hero {
