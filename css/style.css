@@ -4,6 +4,37 @@ a {
   font-weight: 200;
 }
 
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+header-nav {
+  margin-right: auto;
+  margin-left: 93px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  width: 145px;
+  margin-right: 93px;
+}
+
 .about-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -66,15 +97,6 @@ a {
   padding-bottom: 94px;
 }
 
-.header-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: #000000;
-  width: 145px;
-  margin-right: 93px;
-}
 
 .register-footer {
   background-color: #2f303a;
@@ -164,6 +186,7 @@ a {
   color: #212121;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .team-position {
@@ -174,8 +197,12 @@ a {
   color: #757575;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
+.team-item {
+  padding-bottom: 20px;
+}
 .names {
   border-radius: 4px;
   width: 125px;
@@ -322,20 +349,6 @@ letter-spacing: 0.03em;
   outline: solid red;
 }
 
-.header-list {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: auto;
-}
-
-header-nav {
-  margin-right: auto;
-  margin-left: 93px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 
 .header-container {
   display: flex;
@@ -389,12 +402,6 @@ display: block;
 .about-container {
   display: flex;
   flex-direction: row;
-}
-
-.header-container {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .address {
