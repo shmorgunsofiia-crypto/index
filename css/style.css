@@ -14,6 +14,7 @@ a {
   width: 270px;
   display: flex;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .about-names {
@@ -24,6 +25,7 @@ a {
   text-transform: uppercase;
   color: #212121;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .about-planning {
@@ -34,6 +36,7 @@ a {
   text-transform: uppercase;
   color: #212121;
   padding-bottom: 30px;
+   padding-top: 30px;
 }
 
 .about-tech {
@@ -44,6 +47,7 @@ a {
   text-transform: uppercase;
   color: #212121;
   padding-bottom: 30px;
+   padding-top: 30px;
 }
 
 .work-title {
@@ -179,6 +183,12 @@ a {
   color: #212121;
   background: #f5f4fa;
   gap: 8px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+   margin-right: auto;
+margin-left: auto;
 }
 
 .everyone {
@@ -187,6 +197,12 @@ a {
   background-color: #2196f3;
   color: #ffffff;
   gap: 8px;
+  display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+  justify-content: center;
+margin-right: auto;
+margin-left: auto;
 }
 
 .hero-title {
@@ -232,27 +248,28 @@ a {
 .gmail {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
-  width: 135px;
 }
 
 .numbers {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+ font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
-  width: 122px;
 }
 
 .email {
-  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -260,12 +277,31 @@ a {
 }
 
 .phone {
-  width: 122px;
-  height: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .color {
+  font-family: "Roboto", sans-serif;
   color: #2196f3;
+  font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
+}
+.end-color {
+  font-family: "Roboto", sans-serif;
+  color: #2196f3;
+  color: #fff;
+  font-weight: 700;
+font-size: 26px;
+letter-spacing: 0.03em;
 }
 
 .about-text {
@@ -340,6 +376,8 @@ header-nav {
   width: 216px;
   height: 50px;
   justify-content: center;
+  gap: 30px;
+display: block;
 }
 
 .about-list {
