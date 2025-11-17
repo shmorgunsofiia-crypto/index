@@ -44,8 +44,6 @@ header-logo {
   color: #212121;
   width: 270px;
   display: flex;
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
 
 .about-names {
@@ -55,8 +53,6 @@ header-logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  padding-bottom: 30px;
-  padding-top: 30px;
 }
 
 .about-planning {
@@ -66,8 +62,6 @@ header-logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  padding-bottom: 30px;
-   padding-top: 30px;
 }
 
 .about-tech {
@@ -77,8 +71,6 @@ header-logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  padding-bottom: 30px;
-   padding-top: 30px;
 }
 
 .work-title {
@@ -95,16 +87,6 @@ header-logo {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 94px;
-}
-
-
-.register-footer {
-  background-color: #2f303a;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
 }
 
 .team-title {
@@ -200,9 +182,6 @@ header-logo {
   padding-bottom: 20px;
 }
 
-.team-item {
-  padding-bottom: 20px;
-}
 .names {
   border-radius: 4px;
   width: 125px;
@@ -312,7 +291,6 @@ color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #757575;
 }
 
 .color {
@@ -338,6 +316,8 @@ letter-spacing: 0.03em;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .container {
@@ -353,12 +333,6 @@ letter-spacing: 0.03em;
 .header-container {
   display: flex;
   gap: 8px;
-}
-
-.hero-button {
-  display: flex;
-  align-content: center;
-  flex-direction: row;
 }
 
 .work-list {
@@ -391,6 +365,7 @@ letter-spacing: 0.03em;
   justify-content: center;
   gap: 30px;
 display: block;
+margin-top: 30px;
 }
 
 .about-list {
@@ -402,6 +377,7 @@ display: block;
 .about-container {
   display: flex;
   flex-direction: row;
+  padding-top: 94px;
 }
 
 .address {
@@ -423,4 +399,14 @@ display: block;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+
+.register-footer {
+  background-color: #2f303a;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
