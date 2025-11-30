@@ -170,6 +170,7 @@ header-logo {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .team-position {
@@ -189,10 +190,12 @@ header-logo {
   height: 38px;
   color: #212121;
   background: #f5f4fa;
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 gap: 8px;
+text-align: center;
+justify-content: center;
 }
 
 .everyone {
@@ -204,6 +207,8 @@ gap: 8px;
 flex-direction: row;
 flex-wrap: wrap;
 gap: 8px;
+text-align: center;
+justify-content: center;
 }
 
 .menu {
