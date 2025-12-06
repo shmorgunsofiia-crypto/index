@@ -73,6 +73,28 @@ header-logo {
   color: #212121;
 }
 
+.about-photo {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.about-photo::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 2px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
 .work-title {
   font-family: "Roboto";
   line-height: 42px;
@@ -149,7 +171,6 @@ header-logo {
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 30px;
-
 }
 
 .hero-text {
@@ -189,10 +210,9 @@ header-logo {
   color: #212121;
   background: #f5f4fa;
   display: flex;
-  
 
-align-items:center ;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .everyone {
@@ -200,19 +220,19 @@ justify-content: center;
   height: 38px;
   background-color: #2196f3;
   color: #ffffff;
-  display:flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 8px;
-text-align: center;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  text-align: center;
+  justify-content: center;
 }
 
 .menu {
   display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
-  gap:10px;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -259,20 +279,20 @@ justify-content: center;
 .gmail {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-font-size: 14px;
-line-height: 171%;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
 }
 
 .numbers {
   font-family: "Roboto", sans-serif;
- font-weight: 400;
-font-size: 14px;
-line-height: 171%;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
 }
 
@@ -302,16 +322,16 @@ color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto", sans-serif;
   color: #2196f3;
   font-weight: 700;
-font-size: 26px;
-letter-spacing: 0.03em;
+  font-size: 26px;
+  letter-spacing: 0.03em;
 }
 .end-color {
   font-family: "Roboto", sans-serif;
   color: #2196f3;
   color: #fff;
   font-weight: 700;
-font-size: 26px;
-letter-spacing: 0.03em;
+  font-size: 26px;
+  letter-spacing: 0.03em;
 }
 
 .about-text {
@@ -331,9 +351,7 @@ letter-spacing: 0.03em;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: solid red;
 }
-
 
 .header-container {
   display: flex;
@@ -369,8 +387,8 @@ letter-spacing: 0.03em;
   height: 50px;
   justify-content: center;
   gap: 30px;
-display: block;
-margin-top: 30px;
+  display: block;
+  margin-top: 30px;
 }
 
 .about-list {
@@ -405,7 +423,6 @@ margin-top: 30px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 
 .register-footer {
   background-color: #2f303a;
