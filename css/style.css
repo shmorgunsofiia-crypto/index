@@ -205,6 +205,25 @@ header-logo {
   color: #757575;
 }
 
+.hero {
+  position: relative;
+  max-width: 16000;   
+  height: 600px;             
+  background: url("./images/people.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px;
+
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  background: grey (10,30,40,20.45);   
+}
+
+
 .team-name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
