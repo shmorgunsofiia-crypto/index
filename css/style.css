@@ -329,7 +329,10 @@ header-logo {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+}
+
+.email:hover {
+color: #2196f3;
 }
 
 .phone {
@@ -341,6 +344,10 @@ header-logo {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+}
+
+.phone:hover {
+  color: #2196f3;
 }
 
 .color {
@@ -381,6 +388,11 @@ header-logo {
 .header-container {
   display: flex;
   gap: 8px;
+  align-items: center;
+}
+
+.header-nav{
+  margin-left: 93px;
 }
 
 .work-list {
@@ -414,9 +426,9 @@ header-logo {
   gap: 30px;
   display: block;
   padding: 14px 28px;
-  text-decoration: none;
   border-radius: 4px;
-position: absolute;
+position:absolute;
+
 }
 
 .about-list {
@@ -446,19 +458,12 @@ position: absolute;
 }
 
 .hero {
-  height: 600px;
   background-image: url("./images/people.png");
-  padding-top: 200px;
-  padding-bottom: 200px;
-  display: flex;
-   margin-bottom: 90px;
-  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   align-items: center;
-  justify-content: center;
-  background: url("./images/people.png");
   background-position: center;
-  max-width: 1600;
-  
+background-size: cover;
 }
 
 .register-footer {
