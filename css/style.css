@@ -258,22 +258,18 @@ header-logo {
 }
 
 .hero-title {
-  width: 696px;
-  margin-left: auto;
+width: 696px;
+font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin-left: auto;
   margin-right: auto;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 696;
-  font-size: 44px;
-  line-height: 136%;
-  letter-spacing: 0.06em;
+  font-weight: 800;
   text-transform: uppercase;
-  position: absolute;
-  padding: 50px 60px;
-  text-align: center;
-  color: #fff;
-  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin-bottom: 28px;
 }
+
 .studio {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -383,6 +379,8 @@ color: #2196f3;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+   position: relative;
+  text-align: center;
 }
 
 .header-container {
@@ -416,7 +414,6 @@ color: #2196f3;
 .hero-button {
   background-color: #2196f3;
   color: #ffffff;
-  display: flex;
   width: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -427,8 +424,7 @@ color: #2196f3;
   display: block;
   padding: 14px 28px;
   border-radius: 4px;
-position:absolute;
-
+  border: none;
 }
 
 .about-list {
@@ -458,12 +454,16 @@ position:absolute;
 }
 
 .hero {
-  background-image: url("./images/people.png");
-  padding-top: 50px;
-  padding-bottom: 50px;
-  align-items: center;
+  background-image: url("../images/people.png");
   background-position: center;
-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1600px;
+ min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .register-footer {
@@ -473,4 +473,11 @@ background-size: cover;
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(47, 48, 58, 0.6);
 }
