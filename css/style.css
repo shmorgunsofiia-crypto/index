@@ -442,6 +442,13 @@ color: #2196f3;
 .address {
   background-color: #2f303a;
   color: #ffffff;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #fff;
 }
 
 .main-list {
