@@ -118,11 +118,11 @@ header-logo {
 
 .work-title {
   font-family: "Roboto";
-  line-height: 42px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  width: 366px;
-  padding-bottom: 50px;
+  font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
 }
 
 .work-container {
@@ -134,11 +134,12 @@ header-logo {
 
 .team-title {
   font-family: "Roboto";
-  line-height: 42px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  width: 266px;
-  padding-bottom: 50px;
+ font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+text-align: center;
 }
 
 .man3 {
@@ -305,6 +306,7 @@ font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
+     gap:9px ;
 }
 
 .numbers {
@@ -315,6 +317,7 @@ font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
+     gap:9px ;
 }
 
 .email {
@@ -405,10 +408,14 @@ color: #2196f3;
   gap: 27px;
 }
 
+
 .team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color:#F5F4FA ;
+  width:1600px;
+  height: 708px;
 }
 
 .hero-button {
@@ -449,6 +456,7 @@ font-size: 14px;
 line-height: 171%;
 letter-spacing: 0.03em;
 color: #fff;
+   gap:9px ;
 }
 
 .main-list {
@@ -482,9 +490,47 @@ color: #fff;
   color: #2196f3;
 }
 
+.footer-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #fff;
+}
+
+.footer-container {
+  width: 1600px;
+  height: 252px;
+  background-color: #2F303A;
+   padding-top:50px;
+  padding-bottom: 60px;
+}
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(47, 48, 58, 0.6);
+}
+
+.clients{
+  fill: #AFB1B8;
+  padding-top: 50px;
+  padding-bottom:94px ;
+}
+
+.clients-list{
+  display: flex;
+  justify-content: space-between;
+   padding-top: 50px;
+}
+
+.clients-text{
+  font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
 }
