@@ -177,6 +177,59 @@ text-align: center;
   margin-right: 30px;
 }
 
+.team-elemnt{
+  display: flex;
+  gap: 22px;
+  justify-content: center;  
+margin-top: 28px;
+margin-bottom: 42px;
+}
+
+.team-icon{
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+
+.team-con{
+   width: 20px;
+  height: 20px;
+  fill: #FFFFFF;
+}
+
+.team-connection{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    background-color:#4A4D53 ;
+}
+
+.team-connection:hover {
+   background-color: #2196F3;
+   .team-con{
+    fill:#FFFFFF ;
+   }
+}
+
+.team-link{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.team-link:hover {
+   background-color: #2196F3;
+   .team-icon{
+    fill:#FFFFFF ;
+   }
+}
+
 .main-poster {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -328,11 +381,25 @@ font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap:5px ;
 }
 
 .email:hover {
 color: #2196f3;
+.header-icon {
+  fill:#2196f3;
 }
+}
+
+.header-icon{
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+
+
 
 .phone {
   font-family: "Roboto", sans-serif;
@@ -343,10 +410,16 @@ color: #2196f3;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap:5px ;
 }
 
 .phone:hover {
   color: #2196f3;
+  .header-icon{
+    fill:#2196f3;
+  }
 }
 
 .color {
@@ -417,6 +490,8 @@ color: #2196f3;
   width:1600px;
   height: 708px;
 }
+
+
 
 .hero-button {
   background-color: #2196f3;
@@ -497,6 +572,9 @@ font-size: 14px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #fff;
+display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-container {
