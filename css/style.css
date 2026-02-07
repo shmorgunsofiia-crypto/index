@@ -612,3 +612,9 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #212121;
 }
+
+.client-icon:hover {
+  fill: #2196F3;
+  width:290px;
+  height:145px;
+}
