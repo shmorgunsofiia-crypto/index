@@ -136,8 +136,11 @@ text-align: center;
 color: #fff;
 padding-bottom:27px ;
 padding-top: 27px;
-background: rgba(139, 141, 149, 0.8);
-}z
+background: rgba(47, 48, 58, 0.8);
+position: absolute;
+bottom: 0;
+width: 100%;
+}
 
 
 .work-container {
@@ -145,6 +148,10 @@ background: rgba(139, 141, 149, 0.8);
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 94px;
+}
+
+.work-item{
+position: relative;
 }
 
 .team-title {
@@ -559,6 +566,7 @@ background: rgba(139, 141, 149, 0.8);
   letter-spacing: 0.03em;
   color: #fff;
   gap: 9px;
+  display: flex;
 }
 
 .main-list {
