@@ -123,25 +123,24 @@ header-logo {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom:50px ;
+  margin-bottom: 50px;
 }
 
-.work-text{
+.work-text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-font-size: 14px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-text-align: center;
-color: #fff;
-padding-bottom:27px ;
-padding-top: 27px;
-background: rgba(47, 48, 58, 0.8);
-position: absolute;
-bottom: 0;
-width: 100%;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-
 
 .work-container {
   display: flex;
@@ -150,8 +149,8 @@ width: 100%;
   padding-bottom: 94px;
 }
 
-.work-item{
-position: relative;
+.work-item {
+  position: relative;
 }
 
 .team-title {
@@ -167,7 +166,10 @@ position: relative;
 
 .team-item {
   background-color: #fff;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .man3 {
@@ -205,7 +207,7 @@ position: relative;
 
 .team-elemnt {
   display: flex;
- gap: 10px;
+  gap: 10px;
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
@@ -429,8 +431,8 @@ position: relative;
   height: 16px;
 }
 
-.phone:hover{
-   color: #2196f3;
+.phone:hover {
+  color: #2196f3;
   .header-icons {
     fill: #2196f3;
   }
@@ -637,6 +639,7 @@ position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  gap: 30px;
 }
 
 .clients-text {
@@ -650,8 +653,27 @@ position: relative;
 
 .client-icon:hover {
   fill: #2196f3;
-  width: 300px;
-  height: 150px;
-   border: 2px solid #AFB1B8;
+  width: 170px;
+  height: 92px;
+  border: 2px solid #afb1b8;
   border-radius: 16px;
+  /* width: 106px;
+  height: 60px;
+  border: 1px solid #afb1b8; */
 }
+
+.client-icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+
+/* .client-container{
+  width: 106px;
+  height: 60px;
+  border: 1px solid #afb1b8;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */
