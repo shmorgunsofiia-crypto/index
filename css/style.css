@@ -16,6 +16,8 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 header-nav {
@@ -52,6 +54,7 @@ header-logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+   margin-bottom: 10px;
 }
 
 .about-planning {
@@ -61,6 +64,7 @@ header-logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+   margin-bottom: 10px;
 }
 
 .about-tech {
@@ -70,12 +74,14 @@ header-logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+   margin-bottom: 10px;
 }
 
 .about-photo {
   position: relative;
   padding-top: 40px;
   padding-bottom: 20px;
+   margin-bottom: 10px;
 }
 
 .about-item::before {
@@ -372,6 +378,7 @@ color: #212121;
   letter-spacing: 0.02em;
   color: #212121;
   width: 72px;
+
 }
 
 .contacts {
@@ -581,7 +588,7 @@ height: 404px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom:200px ;
+  padding-bottom:280px ;
   padding-top: 200px;
   display: flex;
   align-items: center;
@@ -622,7 +629,7 @@ height: 404px;
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(47, 48, 58, 0.6);
+   background: rgba(47, 48, 58, 0.4);
 }
 
 .clients {
@@ -672,13 +679,19 @@ height: 404px;
   align-items: center; */
 
 
-/* .backdrop{
+ .backdrop{
   background-color: #0c070879;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 1;
+}
+
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 }
 
 .model{
@@ -839,5 +852,5 @@ margin-top: 30px;
 }
 
 .footer-symbols{
-  padding-top: 12px;   
-} */
+  margin-left: 70px;
+}

@@ -25,7 +25,7 @@
       <div class="container">
         <div class="header-container">
 
-          <h2 class="header-logo"><span class="color">Web</span>Studio</h2>
+          <h2 class="header-logo"><span class="color" data-modal-open>Web</span>Studio</h2>
           <nav class="header-nav">
             <ul class="header-list">
               <li class="header-item">
@@ -294,7 +294,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-container">
+     <footer class="footer-container">
       <div class="container">
       <h2 class="register-footer"><span class="end-color">Web</span>Studio</h2>
                 <address class="address">
@@ -331,27 +331,28 @@
                 </div>
               </ul>
     </footer>
-   <!-- <div class="backdrop">
+   <div class="backdrop is-hidden" data-modal>
       <div class="model">
-        <button class="model-butn"><svg class="model-icon">
+        <button class="model-butn" data-modal-close><svg class="model-icon">
           <use href="./images/symbol-defs5.svg#icon-cross"></use>
         </svg></button>
         <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="model-form">
         <label class="model-label">Ім'я
-          <input class="model-input" type="text">
+          <input class="model-input" type="text" required minlength="2" maxlength="15">
           <svg class="model-pic">
             <use href="./images/symbol-defs5.svg#icon-person"></use>
           </svg>
         </label>
          <label class="model-label">Телефон
-          <input class="model-input" type="text">
+          <input class="model-input" type="tel" required minlength="17" pattern="^\+380\s\d{2}\s\d{3}\s\d{2}\s\d{2}$"
+          placeholder="+380 55 477 88 77">
            <svg class="model-pic">
             <use href="./images/symbol-defs5.svg#icon-email"></use>
           </svg>
         </label>
          <label class="model-label">Пошта
-          <input class="model-input" type="text">
+          <input class="model-input" type="email" required minlength="10">
            <svg class="model-pic">
             <use href="./images/symbol-defs5.svg#icon-phone"></use>
           </svg>
@@ -360,13 +361,14 @@
           <textarea placeholder="Введіть текст" class="model-comment "></textarea>
         </label>
         <div class="model-box">
-          <input class="model-check" type="checkbox">
+          <input class="model-check" type="checkbox" required>
           <p class="model-text">Погоджуюся з розсилкою та приймаю</p>
           <a class="model-link" href="">Умови договору</a>
         </div>
          <button class="model-submit" type="submit">Відправити</button>
         </form>
       </div>
-    </div>  -->
+    </div> 
+    <script type="module" src="./js/model.js"></script>
   </body>
 </html> 
