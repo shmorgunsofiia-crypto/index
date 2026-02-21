@@ -4,11 +4,6 @@ a {
   font-weight: 200;
 }
 
-.header-container {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 
 .header-list {
   display: flex;
@@ -16,8 +11,6 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 header-nav {
@@ -35,6 +28,11 @@ header-logo {
   color: #000000;
   width: 145px;
   margin-right: 93px;
+}
+
+.header{
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .about-title {
@@ -641,7 +639,7 @@ height: 404px;
 .clients-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+ margin-top: 50px;
   gap: 30px;
 }
 
@@ -656,20 +654,24 @@ height: 404px;
 
 .client-icon:hover {
   fill: #2196f3;
-  width: 170px;
-  height: 92px;
   border: 2px solid #afb1b8;
   border-radius: 16px;
-  /* width: 106px;
-  height: 60px;
-  border: 1px solid #afb1b8; */
+  /* border: 1px solid #afb1b8; */
 }
 
 .client-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.client-link{
+   width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
 }
 
  /* .client-container{
