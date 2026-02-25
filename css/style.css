@@ -592,31 +592,35 @@ background: #fff;
 }
 
 .main-text{
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
 font-size: 18px;
-line-height: 156%;
+line-height: 28px;
 letter-spacing: 0.03em;
 color: #fff;
 position: absolute;
+padding: 50px;
 top: 0;
 left: 0;
-padding:40px ;
+background: rgba(33, 150, 243, 0.9);
+width: 100%;
+height: 100%;
+opacity: 0;
 }
 
 .main-item:hover{
- background: rgba(33, 150, 243, 0.9);
- .main-text{
-opacity: 1;
+  .main-text{
+    opacity: 1;
   }
 }
 
-/* .main-item {
+.main-item {
 border: 1px solid #eee;
 width: 370px;
 height: 404px;
  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
- position: relative; */
+ position: relative;
+}
 
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)) ,url("../images/people.png");
@@ -909,11 +913,29 @@ left: 0;
 opacity: 0;
 }
 
+.studio::after{
+  content: "";
+  display: block;
+  width: 100%;
+ background: #2196f3;
+ border-radius: 2px;
+width: 48px;
+height: 4px;
+position: absolute;
+top: 28px;
+left: 0;
+opacity: 0;
+}
+
 .header-item{
   position: relative;
 }
 
 .second:hover::after{
+  opacity: 1;
+}
+
+.studio:hover::after{
   opacity: 1;
 }
 
