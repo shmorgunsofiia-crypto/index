@@ -215,8 +215,6 @@ header-logo {
 .footer-form{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact{
@@ -582,7 +580,8 @@ color: #212121;
   color: #fff;
   gap: 9px;
   display: block;
-  padding-top:20px ;
+  
+  
 }
 
 .main-list {
@@ -647,16 +646,11 @@ height: 404px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer-container {
   background-color: #2f303a;
-  padding-top: 50px;
-  padding-bottom: 60px;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 70px;
   justify-content: space-between;
   display: flex;
@@ -664,8 +658,8 @@ height: 404px;
 
 .footer{
   background-color: #2f303a;
-  width: 1600px;
-height: 252px;
+padding-top: 60px;
+padding-bottom: 60px;
 }
 
 
@@ -897,6 +891,7 @@ margin-top: 30px;
    display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: start;
 }
 
 .second::after{
@@ -955,6 +950,7 @@ width: 358px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 padding-left: 16px;
+background-color: transparent;
 }
 
 .contact-button{
