@@ -247,17 +247,17 @@ margin-top: 20px;
   display: flex;
   background-color: #4a4d53;
   transition-property: background color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-connection:hover {
   background-color: #2196f3;
   .team-con {
     fill: #ffffff;
-    transition-property: fillm;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -269,8 +269,8 @@ margin-top: 20px;
   align-items: center;
   display: flex;
   transition-property: background-color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover {
@@ -278,8 +278,8 @@ margin-top: 20px;
   .team-icon {
     fill: #ffffff;
     transition-property: fill;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -355,8 +355,8 @@ width: 125px;
 height: 38px;
 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 transition-property: background color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .names:hover{
@@ -469,8 +469,8 @@ color: #212121;
   align-items: center;
   gap: 5px;
   transition-property: color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .email:hover {
@@ -485,8 +485,8 @@ color: #212121;
   height: 12px;
   fill: #757575;
   transition-property: fill;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone:hover {
@@ -508,8 +508,8 @@ color: #212121;
   align-items: center;
   gap: 5px;
   transition-property: color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .color {
@@ -647,16 +647,16 @@ width: 370px;
 height: 294px;
 opacity: 0;
 transition-property: background;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-item:hover{
   .main-text{
     opacity: 1;
     transition-property: opacity;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -739,8 +739,8 @@ padding-bottom: 60px;
   border-radius: 16px;
   /* border: 1px solid #afb1b8; */
   transition-property: fill;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
@@ -757,8 +757,8 @@ padding-bottom: 60px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-property: border;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  /* .client-container{
@@ -960,8 +960,8 @@ top: 28px;
 left: 0;
 opacity: 0;
 transition-property: opacity;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .studio::after{
@@ -977,8 +977,8 @@ top: 35px;
 left: 0;
 opacity: 0;
 transition-property: opacity;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .header-item{
