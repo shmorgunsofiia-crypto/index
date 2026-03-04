@@ -246,12 +246,18 @@ margin-top: 20px;
   align-items: center;
   display: flex;
   background-color: #4a4d53;
+  transition-property: background color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .team-connection:hover {
   background-color: #2196f3;
   .team-con {
     fill: #ffffff;
+    transition-property: fillm;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 
@@ -262,12 +268,18 @@ margin-top: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
+  transition-property: background-color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .team-link:hover {
   background-color: #2196f3;
   .team-icon {
     fill: #ffffff;
+    transition-property: fill;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 
@@ -279,6 +291,17 @@ margin-top: 20px;
   letter-spacing: 0.06em;
   color: #212121;
   width: 322px;
+  padding-left: 24px;
+}
+
+.main-design{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+font-size: 16px;
+line-height: 188%;
+letter-spacing: 0.03em;
+color: #757575; 
+padding-left: 24px;
 }
 
 .main-list {
@@ -330,6 +353,15 @@ margin-top: 20px;
   border: none;
 width: 125px;
 height: 38px;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+transition-property: background color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.names:hover{
+color: #fff;
+background: #2196f3;
 }
 
 .everyone {
@@ -436,6 +468,9 @@ color: #212121;
   display: flex;
   align-items: center;
   gap: 5px;
+  transition-property: color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .email:hover {
@@ -449,6 +484,9 @@ color: #212121;
   width: 16px;
   height: 12px;
   fill: #757575;
+  transition-property: fill;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .phone:hover {
@@ -469,6 +507,9 @@ color: #212121;
   display: flex;
   align-items: center;
   gap: 5px;
+  transition-property: color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .color {
@@ -602,14 +643,20 @@ padding: 50px;
 top: 0;
 left: 0;
 background: rgba(33, 150, 243, 0.9);
-width: 100%;
-height: 100%;
+width: 370px;
+height: 294px;
 opacity: 0;
+transition-property: background;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .main-item:hover{
   .main-text{
     opacity: 1;
+    transition-property: opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 
@@ -691,6 +738,9 @@ padding-bottom: 60px;
   border: 2px solid #afb1b8;
   border-radius: 16px;
   /* border: 1px solid #afb1b8; */
+  transition-property: fill;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .client-icon {
@@ -706,6 +756,9 @@ padding-bottom: 60px;
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: border;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
  /* .client-container{
@@ -906,6 +959,9 @@ position: absolute;
 top: 28px;
 left: 0;
 opacity: 0;
+transition-property: opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .studio::after{
@@ -917,9 +973,12 @@ opacity: 0;
 width: 48px;
 height: 4px;
 position: absolute;
-top: 28px;
+top: 35px;
 left: 0;
 opacity: 0;
+transition-property: opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .header-item{
@@ -932,6 +991,14 @@ opacity: 0;
 
 .studio:hover::after{
   opacity: 1;
+}
+
+.studio:hover{
+  color: #2196F3;
+}
+
+.second:hover{
+  color: #2196F3;
 }
 
 .contact-text{
