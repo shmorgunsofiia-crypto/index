@@ -652,9 +652,10 @@ background: rgba(33, 150, 243, 0.9);
 width: 370px;
 height: 294px;
 opacity: 0;
-transition-property: background;
+transition-property: background, opacity, transform;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
 }
 
 .main-item:hover{
@@ -664,6 +665,7 @@ transition-property: background;
     transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transform: translateY(0);
   }
 }
 
