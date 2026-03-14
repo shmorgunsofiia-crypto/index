@@ -9,6 +9,7 @@ a {
   display: flex;
   gap: 50px;
   margin-left: auto;
+  align-items: center;
 }
 
 
@@ -141,7 +142,7 @@ a {
 
 .work{
   padding-bottom: 94px;
-  padding-top: 50px;
+  padding-top: 94px;
 }
 
 .work-item {
@@ -197,10 +198,10 @@ a {
   letter-spacing: 2px;
 }
 
-.team-photo-first {
+/* .team-photo-first {
   width: 270px;
   height: 260px;
-}
+} */
 
 .team-elemnt {
   display: flex;
@@ -580,7 +581,6 @@ transition-property:color ;
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .team {
@@ -607,7 +607,6 @@ transition-property:color ;
 .about-list {
   display: flex;
   flex-direction: row;
-  padding-bottom: 94px;
 }
 
 
@@ -721,7 +720,7 @@ margin-right: auto;
 
 .clients {
   fill: #afb1b8;
-  padding-top: 50px;
+  padding-top: 94px;
   padding-bottom: 94px;
     transition-property: fill;
   transition-duration: 250ms;
@@ -749,14 +748,14 @@ margin-right: auto;
   border: 2px solid #afb1b8;
   border-radius: 16px;
   /* border: 1px solid #afb1b8; */
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
   width: 106px;
   height: 60px;
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link{
