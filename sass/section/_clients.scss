@@ -1,0 +1,52 @@
+.clients {
+  fill: #afb1b8;
+  padding-top: 94px;
+  padding-bottom: 94px;
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+ margin-top: 50px;
+  gap: 30px;
+}
+
+.clients-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.client-icon:hover {
+  fill: #2196f3;
+  border: 2px solid #afb1b8;
+  border-radius: 16px;
+  /* border: 1px solid #afb1b8; */
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link{
+   width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

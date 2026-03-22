@@ -1,0 +1,206 @@
+a {
+  line-height: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  align-items: center;
+}
+
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  width: 145px;
+  margin-right: 93px;
+}
+
+.header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  font-family: "Roboto", sans-serif;
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.email {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email:hover {
+  color: #2196f3;
+  .header-icon {
+    fill: #2196f3;
+  }
+}
+
+.header-icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone:hover {
+  color: #2196f3;
+  .header-icon {
+    fill: #2196f3;
+  }
+}
+
+.phone {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.studio {
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+width: 112px;
+height: 38px;
+font-weight: 500;
+font-size: 16px;
+line-height: 163%;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+transition-property:color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.second {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  width: 72px;
+
+}
+
+.contacts {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  width: 64px;
+}
+
+.header-item{
+  position: relative;
+}
+
+.second:hover::after{
+  opacity: 1;
+}
+
+.studio:hover::after{
+  opacity: 1;
+}
+
+.studio:hover{
+  color: #2196F3;
+}
+
+.second:hover{
+  color: #2196F3;
+}
+
+.contacts:hover::after{
+  opacity: 1;
+}
+
+.contacts:hover{
+  color: #2196F3;
+}
+
+.contacts::after{
+ content: "";
+  display: block;
+  width: 100%;
+ background: #2196f3;
+ border-radius: 2px;
+width: 70px;
+height: 4px;
+position: absolute;
+top: 28px;
+left: 0;
+opacity: 0;
+transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.second::after{
+  content: "";
+  display: block;
+  width: 100%;
+ background: #2196f3;
+ border-radius: 2px;
+height: 4px;
+position: absolute;
+top: 32px;
+left: 0;
+opacity: 0;
+transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio::after{
+  content: "";
+  display: block;
+  width: 100%;
+ background: #2196f3;
+ border-radius: 2px;
+width: 48px;
+height: 4px;
+position: absolute;
+top: 35px;
+left: 0;
+opacity: 0;
+}
