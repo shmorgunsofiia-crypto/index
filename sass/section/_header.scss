@@ -5,15 +5,21 @@ a {
 }
 
 
-.header-list {
+
+
+
+
+
+.header{
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &__container {
   display: flex;
-  gap: 50px;
-  margin-left: auto;
   align-items: center;
 }
 
-
-.header-logo {
+  &__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -23,17 +29,7 @@ a {
   margin-right: 93px;
 }
 
-.header{
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.color {
+&__color {
   font-family: "Roboto", sans-serif;
   color: #2196f3;
   font-weight: 700;
@@ -41,61 +37,17 @@ a {
   letter-spacing: 0.03em;
 }
 
-.email {
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+&__list {
   display: flex;
+  gap: 50px;
+  margin-left: auto;
   align-items: center;
-  gap: 5px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email:hover {
-  color: #2196f3;
-  .header-icon {
-    fill: #2196f3;
-  }
+&__item{
+  position: relative;
 }
-
-.header-icon {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone:hover {
-  color: #2196f3;
-  .header-icon {
-    fill: #2196f3;
-  }
-}
-
-.phone {
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.studio {
+  &__studio {
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
 width: 112px;
@@ -109,56 +61,68 @@ color: #212121;
 transition-property:color ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  &::after{
+  content: "";
+  display: block;
+  width: 100%;
+ background: #2196f3;
+ border-radius: 2px;
+width: 48px;
+height: 4px;
+position: absolute;
+top: 35px;
+left: 0;
+  bottom: 0;
+opacity: 0;
+
+}
+&:hover::after{
+  opacity: 1;
+}
+&:hover{
+  color: #2196F3;
+}
 }
 
-.second {
+&__second {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
   width: 72px;
-
+&:hover::after{
+  opacity: 1;
+}
+&::after{
+  content: "";
+  display: block;
+  width: 100%;
+ background: #2196f3;
+ border-radius: 2px;
+height: 4px;
+position: absolute;
+top: 32px;
+left: 0;
+opacity: 0;
+  bottom: 0;
+transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&:hover{
+  color: #2196F3;
+}
 }
 
-.contacts {
+&__contacts {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
   width: 64px;
-}
-
-.header-item{
-  position: relative;
-}
-
-.second:hover::after{
-  opacity: 1;
-}
-
-.studio:hover::after{
-  opacity: 1;
-}
-
-.studio:hover{
-  color: #2196F3;
-}
-
-.second:hover{
-  color: #2196F3;
-}
-
-.contacts:hover::after{
-  opacity: 1;
-}
-
-.contacts:hover{
-  color: #2196F3;
-}
-
-.contacts::after{
+&::after{
  content: "";
   display: block;
   width: 100%;
@@ -170,37 +134,70 @@ position: absolute;
 top: 28px;
 left: 0;
 opacity: 0;
+  bottom: 0;
 transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+&:hover::after{
+  opacity: 1;
+}
 
-.second::after{
-  content: "";
-  display: block;
-  width: 100%;
- background: #2196f3;
- border-radius: 2px;
-height: 4px;
-position: absolute;
-top: 32px;
-left: 0;
-opacity: 0;
-transition-property: opacity;
+&:hover{
+  color: #2196F3;
+}
+}
+
+&__email {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+  color: #2196f3;
+   .header-icon {
+    fill: #2196f3;
+  }
+}
 }
 
-.studio::after{
-  content: "";
-  display: block;
-  width: 100%;
- background: #2196f3;
- border-radius: 2px;
-width: 48px;
-height: 4px;
-position: absolute;
-top: 35px;
-left: 0;
-opacity: 0;
+&__phone {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+  color: #2196f3;
+  .header-icon {
+    fill: #2196f3;
+  }
 }
+}
+
+&__icon {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+}
+
