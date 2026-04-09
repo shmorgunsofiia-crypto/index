@@ -16,7 +16,7 @@
 font-size: 16px;
 line-height: 188%;
 letter-spacing: 0.03em;
-color: #757575; 
+color: $text-color; 
 padding-left: 24px;
 }
 
@@ -47,7 +47,7 @@ padding: 50px;
 top: 0;
 left: 0;
 bottom: 0;
-background: rgba(33, 150, 243, 0.9);
+background: $main-text-bg;
 width: 370px;
 height: 294px;
 opacity: 0;
@@ -69,7 +69,7 @@ transition-property: background, opacity, transform;
 }
 
 .main-item {
-border: 1px solid #eee;
+border: 1px solid $main-border;
 width: 370px;
 height: 404px;
  position: relative;
