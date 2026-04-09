@@ -1,4 +1,5 @@
 
+@use"../utilies/placeholders" as *;
 
 .work-title {
   font-family: "Roboto";
@@ -33,8 +34,9 @@
 }
 
 .work{
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @extend %padding;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
 }
 
 .work-item {

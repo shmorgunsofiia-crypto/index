@@ -1,3 +1,14 @@
+
+@use"../utilies/placeholders" as *;
+
+.team {
+  @extend %padding;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
+  background-color: #f5f4fa;
+}
+
+
 .team-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -117,11 +128,7 @@
   flex-wrap: wrap;
 }
 
-.team {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background-color: tea;
-}
+
 
 .man3 {
   font-family: "Roboto";

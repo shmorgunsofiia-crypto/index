@@ -1,3 +1,14 @@
+
+
+.hero {
+  background-image: linear-gradient($hero-gradient)  ,url("../images/people.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:280px ;
+  padding-top: 200px;
+}
+
 .hero-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -35,13 +46,4 @@ margin-right: auto;
   padding: 14px 28px;
   border-radius: 4px;
   border: none;
-}
-
-.hero {
-  background-image: $hero-gradient ,url("../images/people.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom:280px ;
-  padding-top: 200px;
 }

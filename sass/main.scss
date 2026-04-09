@@ -1,6 +1,8 @@
 @use"./base/reset";
 @use"./base/container";
+@use"./utilies/placeholders";
 @use"./base/variables";
+@use"./utilies/mixin";
 @use"./base/common";
 @use"./section/header";
 @use"./section/hero";
