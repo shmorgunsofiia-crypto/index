@@ -1,7 +1,7 @@
 
 
 .hero {
-  background-image: linear-gradient($hero-gradient)  ,url("../images/people.png");
+  background-image: linear-gradient()  ,url("../images/people.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   color: #757575;
 }
 
-.hero-title {
+&__title {
   font-family: "Roboto", sans-serif;
 font-weight: 900;
 font-size: 44px;

@@ -1,5 +1,6 @@
 
 @use"../utilies/placeholders" as *;
+@use"../utilies/mixin" as *;
 
 .team {
   @extend %padding;
@@ -28,9 +29,10 @@
 }
 
 .team-elemnt {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+  // display: flex;
+  // gap: 10px;
+  // justify-content: center;
+  @include flexbox ($gap:10px, $justify);
   margin-top: 16px;
   margin-bottom: 30px;
 }
@@ -118,9 +120,10 @@
 }
 
 .team-list {
-  display: flex;
-  flex-direction: row;
-  gap: 27px;
+  // display: flex;
+  // flex-direction: row;
+  // gap: 27px;
+  @include flexbox ($gap:27px, $direction);
 }
 
 .team-container {

@@ -1,13 +1,12 @@
+
+@use"../utilies/mixin" as *;
+
+
 a {
   line-height: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
 }
-
-
-
-
-
 
 
 .header{
@@ -155,9 +154,10 @@ transition-property: opacity;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  // display: flex;
+  // align-items: center;
+  // gap: 5px;
+  @include flexbox ($gap:5px, $align);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -176,9 +176,10 @@ transition-property: opacity;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+  // display: flex;
+  // align-items: center;
+  // gap: 5px;
+  @include flexbox($gap:5px, $align);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -12,10 +12,11 @@
 }
 
 .clients-list {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
+  //   gap: 30px;
+  @include flexbox($gap:24px, $justify: space-between);
  margin-top: 50px;
-  gap: 30px;
 }
 
 .clients-text {
@@ -45,9 +46,10 @@
 .client-link{
    width: 170px;
   height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flexbox ($align, $justify);
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-property: border;

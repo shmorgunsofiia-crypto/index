@@ -1,4 +1,6 @@
 
+@use"../utilies/mixin";
+
 .main-poster {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -21,10 +23,11 @@ padding-left: 24px;
 }
 
 .main-list {
-  display: flex;
-  gap: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  // display: flex;
+  // gap: 30px;
+  // flex-direction: row;
+  // flex-wrap: wrap; 
+  @include flexbox ($gap:30px, $direction:row, $wrap);
   padding-bottom: 30px;
 }
 

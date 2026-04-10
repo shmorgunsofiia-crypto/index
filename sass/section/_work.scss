@@ -1,7 +1,8 @@
 
 @use"../utilies/placeholders" as *;
+@use"../utilies/mixin" as *;
 
-.work-title {
+work-title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -44,7 +45,8 @@
 }
 
 .work-list {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+  // display: flex;
+  // flex-direction: row;
+  // gap: 30px;
+  @include flexbox ($gap:30px, $direction:row)
 }

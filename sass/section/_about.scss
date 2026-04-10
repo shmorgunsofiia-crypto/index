@@ -1,10 +1,11 @@
 
+@use"../utilies/mixin" as *;
 
 .about{
    padding-top: 94px;
 }
 
-.about-title {
+&__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -14,12 +15,21 @@
   margin-bottom: 10px;
 }
 
-.about-list {
+&__list {
   display: flex;
   flex-direction: row;
 }
 
-.about-names {
+&__names {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+   margin-bottom: 10px;
+}
+&__planning {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -29,17 +39,7 @@
    margin-bottom: 10px;
 }
 
-.about-planning {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-   margin-bottom: 10px;
-}
-
-.about-tech {
+&__tech {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -85,11 +85,11 @@
   background-image: url("../images/astronaut.png");
 }
 
-.about-list {
+&__list {
   gap: 30px;
 }
 
-.about-text {
+&__text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
