@@ -22,7 +22,7 @@
 }
 
 .team-item {
-  background-color: $team-item;
+  background-color: var($team-item);
   box-shadow:$team-shadow;
     border-radius: 0 0 8px 8px;
     overflow: hidden;

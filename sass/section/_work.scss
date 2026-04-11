@@ -22,7 +22,7 @@ work-title {
   color: #fff;
   padding-bottom: 27px;
   padding-top: 27px;
-  background: $phone-overlay;
+  background:var($phone-overlay) ;
   position: absolute;
   bottom: 0;
   width: 100%;

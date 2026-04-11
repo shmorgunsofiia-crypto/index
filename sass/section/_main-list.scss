@@ -50,7 +50,7 @@ padding: 50px;
 top: 0;
 left: 0;
 bottom: 0;
-background: $main-text-bg;
+background: var($main-text-bg);
 width: 370px;
 height: 294px;
 opacity: 0;
