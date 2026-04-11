@@ -7,7 +7,7 @@
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: $title-color;
   width: 322px;
   padding-left: 24px;
 }
@@ -44,7 +44,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 28px;
 letter-spacing: 0.03em;
-color: #fff;
+color: $team-item;
 position: absolute;
 padding: 50px;
 top: 0;

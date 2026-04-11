@@ -1,6 +1,6 @@
 
 @use"../utilies/mixin" as *;
-
+@use"../base/variables" as *;
 
 a {
   line-height: 16px;
@@ -23,14 +23,14 @@ a {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: $header-color;
   width: 145px;
   margin-right: 93px;
 }
 
 &__color {
   font-family: "Roboto", sans-serif;
-  color: #2196f3;
+  color: $accent-color;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
@@ -56,7 +56,7 @@ font-size: 16px;
 line-height: 163%;
 letter-spacing: 0.03em;
 text-align: center;
-color: #212121;
+color: $title-color;
 transition-property:color ;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -64,7 +64,7 @@ transition-property:color ;
   content: "";
   display: block;
   width: 100%;
- background: #2196f3;
+ background: $accent-color;
  border-radius: 2px;
 width: 48px;
 height: 4px;
@@ -79,7 +79,7 @@ opacity: 0;
   opacity: 1;
 }
 &:hover{
-  color: #2196F3;
+  color: $accent-color;
 }
 }
 
@@ -88,7 +88,7 @@ opacity: 0;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: $title-color;
   width: 72px;
 &:hover::after{
   opacity: 1;
@@ -97,7 +97,7 @@ opacity: 0;
   content: "";
   display: block;
   width: 100%;
- background: #2196f3;
+ background: $accent-color;
  border-radius: 2px;
 height: 4px;
 position: absolute;
@@ -110,7 +110,7 @@ transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 &:hover{
-  color: #2196F3;
+  color: $accent-color;
 }
 }
 
@@ -119,13 +119,13 @@ transition-property: opacity;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color:$title-color;
   width: 64px;
 &::after{
  content: "";
   display: block;
   width: 100%;
- background: #2196f3;
+ background:$accent-color;
  border-radius: 2px;
 width: 70px;
 height: 4px;
@@ -143,14 +143,14 @@ transition-property: opacity;
 }
 
 &:hover{
-  color: #2196F3;
+  color: $accent-color;
 }
 }
 
 &__email {
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: $text-color;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -162,9 +162,9 @@ transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-  color: #2196f3;
+  color: $accent-color;
    .header-icon {
-    fill: #2196f3;
+    fill:$accent-color;
   }
 }
 }
@@ -184,9 +184,9 @@ transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-  color: #2196f3;
+  color: $accent-color;
   .header-icon {
-    fill: #2196f3;
+    fill: $accent-color;
   }
 }
 }
@@ -194,7 +194,7 @@ transition-property: opacity;
 &__icon {
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: $text-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

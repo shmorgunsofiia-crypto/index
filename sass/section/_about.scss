@@ -1,61 +1,18 @@
 
 @use"../utilies/mixin" as *;
+@use"../base/variables"as *;
 
 .about{
    padding-top: 94px;
-}
-
-&__title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-&__list {
+   &__list {
   display: flex;
   flex-direction: row;
 }
-
-&__names {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-   margin-bottom: 10px;
-}
-&__planning {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-   margin-bottom: 10px;
+&__list {
+  gap: 30px;
 }
 
-&__tech {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-   margin-bottom: 10px;
-}
-
-.about-photo {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 20px;
-   margin-bottom: 10px;
-}
-
+&__item {
 .about-item::before {
   display: block;
   content: "";
@@ -63,13 +20,20 @@
   height: 120px;
   border-radius: 2px;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
+  background-color: var($about-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80px auto;
 }
+}
 
-.about-item:nth-child(1)::before {
+&__photo {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+   margin-bottom: 10px;
+
+   .about-item:nth-child(1)::before {
   background-image: url("../images/antenna.png");
 }
 
@@ -84,9 +48,15 @@
 .about-item:nth-child(4)::before {
   background-image: url("../images/astronaut.png");
 }
-
-&__list {
-  gap: 30px;
+}
+&__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-color;
+  margin-bottom: 10px;
 }
 
 &__text {
@@ -95,6 +65,42 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: #757575;
-  
+  color: var($text-color);
 }
+
+&__names {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var($title-color);
+   margin-bottom: 10px;
+}
+
+&__planning {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var($title-color) ;
+   margin-bottom: 10px;
+}
+
+&__tech {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var($title-color);
+   margin-bottom: 10px;
+}
+}
+
+
+
+
+
+

@@ -6,7 +6,7 @@
   @extend %padding;
   // padding-bottom: 94px;
   // padding-top: 94px;
-  background-color: #f5f4fa;
+  background-color: $team-bg;
 }
 
 
@@ -39,7 +39,7 @@
 .team-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: $team-text;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,7 +48,7 @@
 .team-con {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill:$footer-color;
 }
 
 .team-connection {
@@ -65,9 +65,9 @@
 }
 
 .team-connection:hover {
-  background-color: #2196f3;
+  background-color: $accent-color;
   .team-con {
-    fill: #ffffff;
+    fill: $footer-color;
     transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -87,9 +87,9 @@
 }
 
 .team-link:hover {
-  background-color: #2196f3;
+  background-color: $accent-color;
   .team-icon {
-    fill: #ffffff;
+    fill:$footer-color;
     transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,7 +102,7 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $title-color;
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -114,7 +114,7 @@
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $text-color;
   display: flex;
   justify-content: center;
 }

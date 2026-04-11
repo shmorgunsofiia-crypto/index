@@ -2,7 +2,7 @@
 @use"../utilies/mixin" as *;
 
 .clients {
-  fill: #afb1b8;
+  fill: var($clients-color);
   @extend %indents-on-section;
   // padding-top: 94px;
   // padding-bottom: 94px;
@@ -25,12 +25,12 @@
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: $title-color;
 }
 
 .client-icon:hover {
-  fill: #2196f3;
-  border: 2px solid #afb1b8;
+  fill: $accent-color;
+  border: 2px solid $clients-color;
   border-radius: 16px;
   /* border: 1px solid #afb1b8; */
 }
@@ -50,7 +50,7 @@
   // align-items: center;
   // justify-content: center;
   @include flexbox ($align, $justify);
-  border: 1px solid #afb1b8;
+  border: 1px solid $clients-color;
   border-radius: 4px;
   transition-property: border;
   transition-duration: 250ms;

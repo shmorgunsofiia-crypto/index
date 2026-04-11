@@ -8,7 +8,7 @@ work-title {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
+  color: $title-color;
   margin-bottom: 50px;
 }
 
@@ -19,7 +19,7 @@ work-title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: $team-item;
   padding-bottom: 27px;
   padding-top: 27px;
   background:var($phone-overlay) ;
