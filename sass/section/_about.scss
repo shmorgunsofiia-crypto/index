@@ -7,13 +7,12 @@
    &__list {
   display: flex;
   flex-direction: row;
-}
-&__list {
-  gap: 30px;
+    gap: 30px;
 }
 
+
 &__item {
-.about-item::before {
+&::before {
   display: block;
   content: "";
   width: 270px;
@@ -27,28 +26,23 @@
 }
 }
 
-&__photo {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 20px;
-   margin-bottom: 10px;
 
-   .about-item:nth-child(1)::before {
+  &__item:nth-child(1)::before {
   background-image: url("../images/antenna.png");
 }
 
-.about-item:nth-child(2)::before {
+&__item:nth-child(2)::before {
   background-image: url("../images/clock.png");
 }
 
-.about-item:nth-child(3)::before {
+&__item:nth-child(3)::before {
   background-image: url("../images/computer-suitcase.png");
 }
 
-.about-item:nth-child(4)::before {
+&__item:nth-child(4)::before {
   background-image: url("../images/astronaut.png");
 }
-}
+
 &__title {
   font-family: "Roboto";
   font-weight: 700;
@@ -65,7 +59,7 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: var($text-color);
+  color: $text-color;
 }
 
 &__names {
@@ -74,7 +68,7 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var($title-color);
+  color: $title-color;
    margin-bottom: 10px;
 }
 

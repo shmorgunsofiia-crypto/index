@@ -1,9 +1,10 @@
 @use"../base/variables" as *;
 @use"../utilies/mixin" as *;
-
+@use"../utilies/placeholders" as *;
+ 
 .clients {
-  fill: var($clients-color);
-  @extend %indents-on-section;
+  fill: $clients-color;
+  @extend %padding;
   // padding-top: 94px;
   // padding-bottom: 94px;
     transition-property: fill;
@@ -49,7 +50,7 @@
   // display: flex;
   // align-items: center;
   // justify-content: center;
-  @include flexbox ($align, $justify);
+  @include flexbox ($align:center, $justify:center);
   border: 1px solid $clients-color;
   border-radius: 4px;
   transition-property: border;

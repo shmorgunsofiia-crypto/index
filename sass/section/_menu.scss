@@ -1,51 +1,53 @@
-.names {
-  border-radius: 4px;
-  color: $title-color;
- background: #f5f4fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-width: 125px;
-height: 38px;
-transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.names:hover{
-color: $team-item;
-background: $accent-color;
-box-shadow: $button-shadow;
-}
+@use"../base/variables" as *;
 
-.everyone {
-  color: $title-color;
- background: $team-bg;
- font-family: "Roboto", sans-serif;
-font-size: 16px;
-line-height: 163%;
-letter-spacing: 0.03em;
-text-align: center;
-border-radius: 4px;
-width: 73px;
-height: 38px;
-border: none;
-transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.everyone:hover{
-  color: $team-item;
-background: $accent-color;
-box-shadow: $button-shadow;
-}
 
-.menu {
-  display: flex;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  gap: 10px;
-  justify-content: center;
+.main {
+
+  &__menu {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__everyone {
+    color: $title-color;
+    background: $team-bg;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    width: 73px;
+    height: 38px;
+    border: none;
+
+    &:hover {
+      color: $team-item;
+      background: $accent-color;
+      box-shadow: $button-shadow;
+    }
+  }
+
+  &__names {
+    border-radius: 4px;
+    color: $title-color;
+    background: #f5f4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 125px;
+    height: 38px;
+
+    &:hover {
+      color: $team-item;
+      background: $accent-color;
+      box-shadow: $button-shadow;
+    }
+  }
 }

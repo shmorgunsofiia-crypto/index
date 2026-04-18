@@ -1,6 +1,7 @@
 
 @use"../utilies/placeholders" as *;
 @use"../utilies/mixin" as *;
+@use"../base/variables" as *;
 
 .team {
   @extend %padding;
@@ -32,7 +33,7 @@
   // display: flex;
   // gap: 10px;
   // justify-content: center;
-  @include flexbox ($gap:10px, $justify);
+  @include flexbox ($gap:10px, $justify:center);
   margin-top: 16px;
   margin-bottom: 30px;
 }
@@ -123,7 +124,7 @@
   // display: flex;
   // flex-direction: row;
   // gap: 27px;
-  @include flexbox ($gap:27px, $direction);
+  @include flexbox ($gap:27px, $direction:row );
 }
 
 .team-container {
@@ -133,30 +134,42 @@
 
 
 
-.man3 {
-  font-family: "Roboto";
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 2px;
+.team-photo-first {
+  // font-family: "Roboto";
+  // font-weight: 500;
+  // line-height: 19px;
+  // letter-spacing: 2px;
+  border-radius: 0 0 4px 4px;
+width: 270px;
+height: 260px;
 }
 
-.woman {
+.team-photo-first {
   font-family: "Roboto";
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 2px;
+    border-radius: 0 0 4px 4px;
+width: 270px;
+height: 260px;
 }
 
-.man {
+.team-photo-first {
   font-family: "Roboto";
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 2px;
+    border-radius: 0 0 4px 4px;
+width: 270px;
+height: 260px;
 }
 
-.man2 {
+.team-photo-first {
   font-family: "Roboto";
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 2px;
+    border-radius: 0 0 4px 4px;
+width: 270px;
+height: 260px;
 }

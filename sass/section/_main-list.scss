@@ -1,7 +1,51 @@
 
-@use"../utilies/mixin";
+@use"../utilies/mixin" as *;
+@use"../base/variables" as *;
 
-.main-poster {
+.main{
+&__list {
+  // display: flex;
+  // gap: 30px;
+  // flex-direction: row;
+  // flex-wrap: wrap; 
+@include flexbox($gap: 30px, $direction: row, $wrap: wrap);
+  padding-bottom: 30px;
+  background: #fff;
+  }
+
+&__item {
+border: 1px solid $main-border;
+width: 370px;
+height: 404px;
+ position: relative;
+ overflow: hidden;
+
+ &:hover{
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+ &:hover .main__text {
+  opacity: 1;
+    transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transform: translateY(1);
+  }
+}
+}
+
+&__photo{
+box-shadow:$portfolio-card;
+background: $team-item;
+border: 1px solid $main-border;
+  width: 100%;
+  height: auto;
+  display: block;
+
+//  @media screen and (min-width: 768px) {
+//     width: 370px;
+//     height: 404px;
+// }
+
+&__poster {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -10,9 +54,13 @@
   color: $title-color;
   width: 322px;
   padding-left: 24px;
+
+  // @media screen and (min-width:768px) {
+  //   width: 322px;
+  // }
 }
 
-.main-design{
+&__design{
     font-family: "Roboto", sans-serif;
   font-weight: 400;
 font-size: 16px;
@@ -20,25 +68,11 @@ line-height: 188%;
 letter-spacing: 0.03em;
 color: $text-color; 
 padding-left: 24px;
+width: 322px;
+height: 30px;
 }
 
-.main-list {
-  // display: flex;
-  // gap: 30px;
-  // flex-direction: row;
-  // flex-wrap: wrap; 
-  @include flexbox ($gap:30px, $direction:row, $wrap);
-  padding-bottom: 30px;
-}
-
-
-.main-list {
-  display: flex;
-  gap: 30px;
-background: #fff;
-}
-
-.main-text{
+&__text{
 font-family: "Roboto", sans-serif;
 font-weight: 400;
 font-size: 18px;
@@ -58,23 +92,11 @@ transition-property: background, opacity, transform;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
-}
 
-.main-item:hover{
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-.main-text{
-    opacity: 1;
-    transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   transform: translateY(0);
-  }
+//   @media screen and (min-width:768px) {
+//     width: 306px;
+// height: 168px;
+//   }
 }
-
-.main-item {
-border: 1px solid $main-border;
-width: 370px;
-height: 404px;
- position: relative;
- overflow: hidden;
+}
 }

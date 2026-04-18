@@ -13,6 +13,14 @@ a {
   padding-top: 24px;
   padding-bottom: 24px;
 
+  @media screen and (min-width:768px) {
+    padding: 21px 0 ;
+  }
+
+    @media screen and (min-width:1200px) {
+    padding:25px 0 ;
+  }
+
   &__container {
   display: flex;
   align-items: center;
@@ -21,11 +29,16 @@ a {
   &__logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   color: $header-color;
   width: 145px;
-  margin-right: 93px;
+  margin-right: auto;
+  line-height: 1.38;
+
+ @media screen and (min-width:1200px){
+  margin-right: 87px ;
+ }
 }
 
 &__color {
@@ -37,15 +50,26 @@ a {
 }
 
 &__list {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: auto;
   align-items: center;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+ @media screen and (min-width:1200px) {
+    flex-direction: row;
+    gap: 20;
+  }
 }
 
 &__item{
   position: relative;
 }
+
   &__studio {
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
@@ -200,5 +224,12 @@ transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
 }
-}
 
+&__nav{
+  display: none;
+
+  @media screen and (min-width:768px) {
+    display: block;
+  }
+}
+}
