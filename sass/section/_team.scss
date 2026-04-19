@@ -8,97 +8,59 @@
   // padding-bottom: 94px;
   // padding-top: 94px;
   background-color: $team-bg;
+
+
+  &__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
-.team-title {
+&__title {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   color: $title-color;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width:480px) {
+     font-size: 36px;
+       margin-bottom: 50px;
+  }
 }
 
-.team-item {
-  background-color: var($team-item);
+&__list {
+  // display: flex;
+  // flex-direction: row;
+  // gap: 27px;
+  @include flexbox ($gap:27px, $direction:row );
+}
+
+&__item {
+  background-color: $team-item;
   box-shadow:$team-shadow;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
+
+@media screen and (min-width:768px) {
+  flex-basis: calc((100% - 30px) / 2) ;
 }
 
-.team-elemnt {
-  // display: flex;
-  // gap: 10px;
-  // justify-content: center;
-  @include flexbox ($gap:10px, $justify:center);
-  margin-top: 16px;
-  margin-bottom: 30px;
-}
-.team-icon {
-  width: 20px;
-  height: 20px;
-  fill: $team-text;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+ @media (min-width: 1200px) {
+  width: calc((100% - 90px) / 4);
 
-.team-con {
-  width: 20px;
-  height: 20px;
-  fill:$footer-color;
+  @media screen and (min-width:768px) {
+  flex-basis: calc((100% - 30px) / 5) ;
 }
-
-.team-connection {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background-color: $team-connect;
-  transition-property: background color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-connection:hover {
-  background-color: $accent-color;
-  .team-con {
-    fill: $footer-color;
-    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.team-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-   transition-property: background-color; 
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-link:hover {
-  background-color: $accent-color;
-  .team-icon {
-    fill:$footer-color;
-    transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 
 
-.team-name {
+
+
+&__name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -110,7 +72,7 @@
   margin-bottom: 10px;
 }
 
-.team-position {
+&__position {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -120,56 +82,103 @@
   justify-content: center;
 }
 
-.team-list {
+&__elemnt {
   // display: flex;
-  // flex-direction: row;
-  // gap: 27px;
-  @include flexbox ($gap:27px, $direction:row );
+  // gap: 10px;
+  // justify-content: center;
+  @include flexbox ($gap:10px, $justify:center);
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 
-.team-container {
+&__connection {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  background-color: $team-connect;
+  transition-property: background color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover {
+  background-color: $accent-color;
+  .team-con {
+    fill: $footer-color;
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+}
+
+ &__con {
+  width: 20px;
+  height: 20px;
+  fill:$footer-color;
+}
+
+&__link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+   transition-property: background-color; 
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+  background-color: $accent-color;
+  .team-icon {
+    fill:$footer-color;
+    transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+}
+
+&__icon {
+  width: 20px;
+  height: 20px;
+  fill: $team-text;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 }
 
 
 
-.team-photo-first {
-  // font-family: "Roboto";
-  // font-weight: 500;
-  // line-height: 19px;
-  // letter-spacing: 2px;
-  border-radius: 0 0 4px 4px;
-width: 270px;
-height: 260px;
-}
-
-.team-photo-first {
+.team-photo {
   font-family: "Roboto";
   font-weight: 500;
   line-height: 19px;
   letter-spacing: 2px;
     border-radius: 0 0 4px 4px;
-width: 270px;
-height: 260px;
+
+@media screen and (min-width: 480px){
+width: 450px;
+height: 460px;
 }
 
-.team-photo-first {
-  font-family: "Roboto";
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 2px;
-    border-radius: 0 0 4px 4px;
+ @media screen and (min-width:768px) {
+width: 354px;
+height: 374px;
+ } 
+
+ @media screen and (min-width:1200px) {
 width: 270px;
 height: 260px;
+ }
 }
 
-.team-photo-first {
-  font-family: "Roboto";
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: 2px;
-    border-radius: 0 0 4px 4px;
-width: 270px;
-height: 260px;
-}
+
+
+

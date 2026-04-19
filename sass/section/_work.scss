@@ -3,7 +3,22 @@
 @use"../utilies/mixin" as *;
 @use"../base/variables" as *;
 
-work-title {
+
+
+
+
+.work{
+  @extend %padding;
+  // padding-bottom: 94px;
+  // padding-top: 94px;
+
+  &__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  &__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
@@ -13,7 +28,18 @@ work-title {
   margin-bottom: 50px;
 }
 
-.work-text {
+&__list {
+  // display: flex;
+  // flex-direction: row;
+  // gap: 30px;
+  @include flexbox ($gap:30px, $direction:row)
+}
+
+&__item {
+  position: relative;
+}
+
+&__text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -28,26 +54,4 @@ work-title {
   bottom: 0;
   width: 100%;
 }
-
-.work-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.work{
-  @extend %padding;
-  // padding-bottom: 94px;
-  // padding-top: 94px;
-}
-
-.work-item {
-  position: relative;
-}
-
-.work-list {
-  // display: flex;
-  // flex-direction: row;
-  // gap: 30px;
-  @include flexbox ($gap:30px, $direction:row)
 }

@@ -10,8 +10,11 @@ a {
 
 
 .header{
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 10px 0;
+
+@media screen and (min-width:480px) {
+  
+}
 
   @media screen and (min-width:768px) {
     padding: 21px 0 ;
@@ -36,8 +39,15 @@ a {
   margin-right: auto;
   line-height: 1.38;
 
+
+@media screen and (min-width:768) {
+  margin-right: 87px;
+}
+
  @media screen and (min-width:1200px){
-  margin-right: 87px ;
+  margin-right: 93px ;
+   font-size: 26px;
+     letter-spacing: 0.78;
  }
 }
 
@@ -51,9 +61,8 @@ a {
 
 &__list {
   display: none;
-  gap: 50px;
+  gap: 10px;
   margin-left: auto;
-  align-items: center;
 
   @media screen and (min-width:768px) {
     display: flex;
@@ -62,7 +71,7 @@ a {
 
  @media screen and (min-width:1200px) {
     flex-direction: row;
-    gap: 20;
+    gap: 50px;
   }
 }
 
@@ -76,9 +85,9 @@ a {
 width: 112px;
 height: 38px;
 font-weight: 500;
-font-size: 16px;
+font-size: 14px;
 line-height: 163%;
-letter-spacing: 0.03em;
+letter-spacing: 0.02em;
 text-align: center;
 color: $title-color;
 transition-property:color ;
