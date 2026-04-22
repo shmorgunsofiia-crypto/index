@@ -11,6 +11,11 @@
     padding-bottom: 50px;
     gap: 10px;
     justify-content: center;
+
+    // @media screen and (min-width:1200px) {
+    //   padding-top: 94px;
+    //   padding-bottom: 94px;
+    // }
   }
 
   &__everyone {
@@ -30,6 +35,10 @@
       color: $team-item;
       background: $accent-color;
       box-shadow: $button-shadow;
+    }
+
+    @media screen and (min-width:768px) {
+      justify-content: center;
     }
   }
 

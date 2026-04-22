@@ -4,6 +4,16 @@
 .footer-form{
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  
+
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+    gap: 12px;
+      text-align:start;
+  }
 }
 
 .register-footer {
@@ -26,8 +36,14 @@
 
 .footer-container {
   background-color: $footer-bg;
-  align-items: baseline;
-  display: flex;
+
+
+  @media screen and (min-width:768px) {
+    display: flex;
+    align-items: first baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer{
@@ -40,9 +56,23 @@ margin-right: auto;
 .footer-symbols{
    display: flex;
   flex-direction: column;
-  margin-left: 70px;
   margin-right: auto;
-}
+  text-align: center; 
+  gap: 15px;
+
+  @media screen and (min-width:480px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width:768px) {
+      margin-left: 165px;
+  }
+
+     @media screen and (min-width:1200px) {
+    text-align:start;
+      margin-left: 70px;
+  } 
+  }
 
 .contact-text{
   font-family: "Roboto", sans-serif;
@@ -88,6 +118,15 @@ border: none;
   margin-bottom: 9px;
 }
 
+.footer-address{
+  text-align: center;
+  gap: 8px;
+
+  @media screen and (min-width:1200px) {
+    text-align:start;
+  }
+}
+
 .gmail {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -122,10 +161,12 @@ border: none;
 }
 
 .contact{
-   display: flex;
-   gap: 12px;
-    /* width: 570px;
-height: 86px; */
-margin-top: 20px;
-/* flex-direction: column; */
+text-align: center;
+margin-top:60px ;
+
+     @media screen and (min-width:1200px) {
+    text-align:start;
+    margin-left: 93px;
+    margin-top:0;
+  } 
 }

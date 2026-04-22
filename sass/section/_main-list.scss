@@ -22,12 +22,13 @@ height: 404px;
 
  &:hover{
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
- &:hover .main__text {
+ &:hover 
+ .main__text {
   opacity: 1;
     transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   transform: translateY(1);
+  transform: translateY(0);
   }
 }
 }
@@ -39,11 +40,7 @@ border: 1px solid $main-border;
   width: 100%;
   height: auto;
   display: block;
-
-//  @media screen and (min-width: 768px) {
-//     width: 370px;
-//     height: 404px;
-// }
+}
 
 &__poster {
   font-family: "Roboto", sans-serif;
@@ -54,12 +51,7 @@ border: 1px solid $main-border;
   color: $title-color;
   width: 322px;
   padding-left: 24px;
-
-  // @media screen and (min-width:768px) {
-  //   width: 322px;
-  // }
 }
-
 &__design{
     font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -84,7 +76,7 @@ padding: 50px;
 top: 0;
 left: 0;
 bottom: 0;
-background: var($main-text-bg);
+background:$main-text-bg;
 width: 370px;
 height: 294px;
 opacity: 0;
@@ -92,11 +84,5 @@ transition-property: background, opacity, transform;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
-
-//   @media screen and (min-width:768px) {
-//     width: 306px;
-// height: 168px;
-//   }
-}
 }
 }
