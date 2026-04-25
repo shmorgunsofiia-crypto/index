@@ -7,16 +7,34 @@
 
   &__menu {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     gap: 10px;
     justify-content: center;
 
-    // @media screen and (min-width:1200px) {
-    //   padding-top: 94px;
-    //   padding-bottom: 94px;
-    // }
+    @media screen and (min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
+
+  &__menu-list{
+ display: flex;
+  justify-content: start;
+  gap: 8px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+
+@media screen and (min-width:370px) and (max-width:767px) {
+  width: 370px;
+}
+
+  @media screen and (min-width:768px) {
+    justify-content: center;
+   width: 100%;
+  }
+}
 
   &__everyone {
     color: $title-color;
@@ -35,10 +53,6 @@
       color: $team-item;
       background: $accent-color;
       box-shadow: $button-shadow;
-    }
-
-    @media screen and (min-width:768px) {
-      justify-content: center;
     }
   }
 
