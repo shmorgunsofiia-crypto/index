@@ -184,7 +184,6 @@ transition-property: opacity;
 
 .header__info {
   display: none;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
