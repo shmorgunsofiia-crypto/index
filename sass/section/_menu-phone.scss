@@ -1,0 +1,121 @@
+
+@use"../base/variables" as *;
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+     background-color:#fff;
+    z-index: 1;
+    padding:48px 0 48px 40px;
+opacity: 1;
+
+    &__btn{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top:10px ;
+        right: 15px;
+//    &:hover{
+//     .menu__close{
+//         fill: #2196F3;
+
+//     }
+//    }
+    }
+
+    &__close{
+        width:30px ;
+        height: 30px;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    &__link{
+        font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 40px;
+letter-spacing: 0.02em;
+color: $title-color;
+    }
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 150px;
+        margin-bottom: 64px;
+    }
+
+    &__contact{
+        font-weight: 500;
+font-size: 34px;
+letter-spacing: 0.02em;
+color: $text-color;
+    }
+
+    &__number{
+        font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 34px;
+letter-spacing: 0.02em;
+color: $accent-color;
+    }
+    
+    &__elm:last-child{
+        .menu__contact {
+            font-weight: 500;
+font-size: 24px;
+letter-spacing: 0.02em;
+color: $added-text;
+        }
+    }
+
+    &__socials{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__media{
+        font-weight: 500;
+font-size: 18px;
+line-height: 122%;
+letter-spacing: 0.02em;
+color: $accent-color;
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+    }
+
+ 
+
+    &__social:not(:last-child)::after{
+           content: "";
+        display: block;
+        width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+    }
+        
+     }
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+ }
