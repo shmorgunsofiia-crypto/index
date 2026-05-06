@@ -379,6 +379,7 @@ a {
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0.02em;
+  color: #757575;
 }
 .menu__socials {
   display: flex;
