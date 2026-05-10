@@ -1326,7 +1326,6 @@ a {
 @media screen and (min-width: 768px) {
   .main__menu-list {
     justify-content: center;
-    width: 100%;
   }
 }
 .main__everyone {
