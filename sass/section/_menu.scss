@@ -20,13 +20,13 @@
 
   &__menu-list{
  display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
   flex-wrap: wrap;
   row-gap: 15px;
 @media screen and (min-width:370px) and (max-width:767px) {
-  width: 370px;
+  justify-content: flex-start;
 }
 
   @media screen and (min-width:768px) {
@@ -43,7 +43,9 @@
     letter-spacing: 0.03em;
     text-align: center;
     border-radius: 4px;
-    width: 73px;
+    // width: 73px;
+    // height: 38px;
+    padding: 0 22px;
     height: 38px;
     border: none;
 
@@ -62,7 +64,7 @@
     align-items: center;
     justify-content: center;
     border: none;
-    width: 125px;
+    padding: 0 22px;
     height: 38px;
 
     &:hover {

@@ -833,7 +833,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .team-photo {
-    width: 270px;
+    width: 300px;
     height: 260px;
   }
 }
@@ -873,7 +873,6 @@ a {
   gap: 30px;
 }
 .clients__item {
-  height: 60px;
   flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
@@ -962,6 +961,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  padding-top: 70px;
 }
 
 .footer-container {
@@ -1312,7 +1312,7 @@ a {
 }
 .main__menu-list {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
   flex-wrap: wrap;
@@ -1320,7 +1320,7 @@ a {
 }
 @media screen and (min-width: 370px) and (max-width: 767px) {
   .main__menu-list {
-    width: 370px;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1337,7 +1337,7 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
   border-radius: 4px;
-  width: 73px;
+  padding: 0 22px;
   height: 38px;
   border: none;
 }
@@ -1354,7 +1354,7 @@ a {
   align-items: center;
   justify-content: center;
   border: none;
-  width: 125px;
+  padding: 0 22px;
   height: 38px;
 }
 .main__names:hover {
