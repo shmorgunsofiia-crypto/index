@@ -835,8 +835,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .team-photo {
-    width: 300px;
-    height: 260px;
+    width: 320px;
+    height: 300px;
   }
 }
 
