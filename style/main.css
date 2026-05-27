@@ -41,7 +41,7 @@ img {
   }
 }
 
-.clients, .team, .work {
+.clients, .work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -674,6 +674,8 @@ a {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 30px;
   background-color: #F5F4FA;
 }
 .team__container {
