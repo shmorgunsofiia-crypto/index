@@ -243,13 +243,14 @@ a {
     flex-direction: column;
     gap: 10px;
     margin-left: auto;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__info {
     flex-direction: row;
     gap: 30px;
+    align-items: center;
   }
 }
 .header__email {
@@ -963,7 +964,6 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  padding-top: 70px;
 }
 
 .footer-container {
@@ -988,14 +988,8 @@ a {
 .footer-symbols {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
   text-align: center;
   gap: 15px;
-}
-@media screen and (min-width: 480px) {
-  .footer-symbols {
-    margin-top: 60px;
-  }
 }
 @media screen and (min-width: 768px) {
   .footer-symbols {

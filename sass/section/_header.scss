@@ -208,12 +208,13 @@ transition-property: opacity;
     flex-direction: column;
     gap: 10px;
     margin-left: auto;
-    align-items: center;
+    align-items: flex-start;
   }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row; 
     gap: 30px;
+    align-items: center;
   }
 }
 
