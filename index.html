@@ -33,29 +33,55 @@
           <h2 class="header__logo">
             <span class="header__color">Web</span>Studio
           </h2>
-          <button  class="header__btn" data-menu-open type="button"><svg class="header__menu">
-            <use href="./images/symbol-defs.svg#icon-menu"></use>
-          </svg></button>
-              <div class="menu is-hidden" data-menu>
-          <button class="menu__btn" data-menu-close type="button"><svg class="menu__close">
-            <use href="./images/symbol-defs5.svg#icon-cross"></use>
-          </svg></button>
-           <ul class="menu__list">
-            <li class="menu__item"><a href="./index.html" class="menu__link">Студія </a></li>
-            <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
-          </ul>
-         <ul class="menu__items">
-            <li class="menu__elm"><a href="tel:+380961111111" class="menu__number">+38 096 111 11 11</a></li>
-            <li class="menu__elm"><a href="mailto:info@devstudio.com" class="menu__contact">info@devstudio.com</a></li>
-          </ul>
-         <ul class="menu__socials">
-            <li class="menu__social"><a href="" class="menu__media">Instagram</a></li>
-            <li class="menu__social"><a href="" class="menu__media">Twitter</a></li>
-            <li class="menu__social"><a href="" class="menu__media">Facebook</a></li>
-            <li class="menu__social"><a href="" class="menu__media">LinkedIn</a></li>
-          </ul>
-        </div>
+          <button class="header__btn" data-menu-open type="button">
+            <svg class="header__menu">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu is-hidden" data-menu>
+            <button class="menu__btn" data-menu-close type="button">
+              <svg class="menu__close">
+                <use href="./images/symbol-defs5.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link">Студія </a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="menu__items">
+              <li class="menu__elm">
+                <a href="tel:+380961111111" class="menu__number"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu__elm">
+                <a href="mailto:info@devstudio.com" class="menu__contact"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu__socials">
+              <li class="menu__social">
+                <a href="" class="menu__media">Instagram</a>
+              </li>
+              <li class="menu__social">
+                <a href="" class="menu__media">Twitter</a>
+              </li>
+              <li class="menu__social">
+                <a href="" class="menu__media">Facebook</a>
+              </li>
+              <li class="menu__social">
+                <a href="" class="menu__media">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
@@ -72,7 +98,7 @@
           <ul class="header__info">
             <li class="header__item">
               <a class="header__email" href="mailto:info@devstudio.com"
-                ><svg class="header__icon">
+                ><svg class="header__icons">
                   <use
                     href="./images/symbol-defs3.svg#icon-envelope"
                   ></use></svg
@@ -138,7 +164,7 @@
           </div>
         </div>
       </section>
-   <!-- <section class="work">
+      <!-- <section class="work">
         <div class="container work__container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -169,16 +195,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item" data-aos="zoom-out-left">
-               <picture>
-                <source srcset="./images/desktop/igor-desktop@1x.webp 1x, ./images/desktop/igor-desktop@2x.webp 2x,"  media="(min-width:1200px)">
-                <source srcset="./images/tablet/igor-tablet@1x.webp 1x, ./images/tablet/igor-tablet@2x.webp 2x," media="(min-wdith:768px)">
-                <source srcset="./images/mobile/igor-mobile@1x.webp 1x, ./images/mobile/igor-mobile@2x.webp 2x," media="(max-width:767px)">
-              <img
-                class="team-photo"
-                width="300"
-                src="images/man.webp"
-                alt="man 1"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/igor-desktop@1x.webp 1x,
+                    ./images/desktop/igor-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor-tablet@1x.webp 1x,
+                    ./images/tablet/igor-tablet@2x.webp 2x
+                  "
+                  media="(min-wdith:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/igor-mobile@1x.webp 1x,
+                    ./images/mobile/igor-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-photo"
+                  width="300"
+                  src="images/man.webp"
+                  alt="man 1"
+                />
               </picture>
               <h2 class="team__name">Ігор Дем'яненко</h2>
               <h3 class="team__position">Product Designer</h3>
@@ -218,17 +262,35 @@
               </ul>
             </li>
             <li class="team__item" data-aos="zoom-out-right">
-               <picture>
-                <source srcset="./images/desktop/olga-desktop@1x.webp 1x, ./images/desktop/olga-desktop@2x.webp 2x,"  media="(min-width:1200px)">
-                <source srcset="./images/tablet/olga-tablet@1x.webp 1x, ./images/tablet/olga-tablet@2x.webp 2x," media="(min-wdith:768px)">
-                <source srcset="./images/mobile/olga-mobile@1x.webp 1x, ./images/mobile/olga-mobile@2x.webp 2x," media="(max-width:767px)">
-              <img
-                class="team-photo"
-                width="300"
-                src="images/woman.webp"
-                alt="woman"
-              />
-             </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/olga-desktop@1x.webp 1x,
+                    ./images/desktop/olga-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga-tablet@1x.webp 1x,
+                    ./images/tablet/olga-tablet@2x.webp 2x
+                  "
+                  media="(min-wdith:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/olga-mobile@1x.webp 1x,
+                    ./images/mobile/olga-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-photo"
+                  width="300"
+                  src="images/woman.webp"
+                  alt="woman"
+                />
+              </picture>
               <h2 class="team__name">Ольга Рєпіна</h2>
               <h3 class="team__position">Frontend Developer</h3>
               <ul class="team__elemnt">
@@ -267,17 +329,35 @@
               </ul>
             </li>
             <li class="team__item" data-aos="zoom-out-down">
-               <picture>
-                <source srcset="./images/desktop/nicholas-desktop@1x.webp 1x, ./images/desktop/nicholas-desktop@2x.webp 2x,"  media="(min-width:1200px)">
-                <source srcset="./images/tablet/nicholas-tablet@1x.webp 1x, ./images/tablet/nicholas-tablet@2x.webp 2x," media="(min-width:768px)">
-                <source srcset="./images/mobile/nicholas-mobile@1x.webp 1x, ./images/mobile/nicholas-mobile@2x.webp 2x," media="(max-width:767px)">
-              <img
-                class="team-photo"
-                width="300"
-                src="images/man2.webp"
-                alt="man 2"
-              />
-               </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/nicholas-desktop@1x.webp 1x,
+                    ./images/desktop/nicholas-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/nicholas-tablet@1x.webp 1x,
+                    ./images/tablet/nicholas-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/nicholas-mobile@1x.webp 1x,
+                    ./images/mobile/nicholas-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-photo"
+                  width="300"
+                  src="images/man2.webp"
+                  alt="man 2"
+                />
+              </picture>
               <h2 class="team__name">Микола Тарасов</h2>
               <h3 class="team__position">Marketing</h3>
               <ul class="team__elemnt">
@@ -291,7 +371,7 @@
                 </li>
                 <li class="team__elm">
                   <a class="team__link" href=""
-                    ><svg  class="team__icon">
+                    ><svg class="team__icon">
                       <use
                         href="./images/symbol-defs4.svg#icon-twittter"
                       ></use></svg
@@ -299,7 +379,7 @@
                 </li>
                 <li class="team__elm">
                   <a class="team__link" href=""
-                    ><svg  class="team__icon">
+                    ><svg class="team__icon">
                       <use
                         href="./images/symbol-defs4.svg#icon-facebook"
                       ></use></svg
@@ -307,7 +387,7 @@
                 </li>
                 <li class="team__elm">
                   <a class="team__link" href=""
-                    ><svg  class="team__icon">
+                    ><svg class="team__icon">
                       <use
                         href="./images/symbol-defs4.svg#icon-linkedin"
                       ></use></svg
@@ -316,17 +396,35 @@
               </ul>
             </li>
             <li class="team__item" data-aos="zoom-out-up">
-               <picture>
-                <source srcset="./images/desktop/michael-desktop@1x.webp 1x, ./images/desktop/michael-desktop@2x.webp 2x,"  media="(min-width:1200px)">
-                <source srcset="./images/tablet/michael-tablet@1x.webp 1x, ./images/tablet/michael-tablet@2x.webp 2x," media="(min-width:768px)">
-                <source srcset="./images/mobile/michael-mobile@1x.webp 1x, ./images/mobile/michael-mobile@2x.webp 2x," media="(max-width:767px)">
-              <img
-               class="team-photo"
-                width="300"
-                src="images/man3.webp"
-                alt="man 3"
-              />
-            </picture>
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/michael-desktop@1x.webp 1x,
+                    ./images/desktop/michael-desktop@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/michael-tablet@1x.webp 1x,
+                    ./images/tablet/michael-tablet@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/michael-mobile@1x.webp 1x,
+                    ./images/mobile/michael-mobile@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-photo"
+                  width="300"
+                  src="images/man3.webp"
+                  alt="man 3"
+                />
+              </picture>
               <h2 class="team__name">Михайло Єрмаков</h2>
               <h3 class="team__position">UI Designer</h3>
               <ul class="team__elemnt">
@@ -368,7 +466,7 @@
         </div>
       </section>
 
-    <section class="clients">
+      <section class="clients">
         <div class="container">
           <div class="client__container">
             <h2 class="clients__text">Постійні клієнти</h2>
@@ -412,8 +510,10 @@
 
               <li class="clients__item">
                 <a class="clients__link" href=""
-                   ><svg class="clients__icon">
-                    <use href="./images/symbol-defs2.svg#icon-tag-line"></use></svg
+                  ><svg class="clients__icon">
+                    <use
+                      href="./images/symbol-defs2.svg#icon-tag-line"
+                    ></use></svg
                 ></a>
               </li>
             </ul>
@@ -472,9 +572,11 @@
         </div>
         <div class="footer-form">
           <form class="contact">
-              <p class="contact-text">Підпишіться на розсилку</p>
-            <input class="contact-input" type="email" placeholder="E-mail" />
-            <button class="contact-button">Підписатися</button>
+            <p class="contact-text">Підпишіться на розсилку</p>
+            <div class="sign-up">
+              <input class="contact-input" type="email" placeholder="E-mail" />
+              <button class="contact-button">Підписатися</button>
+            </div>
           </form>
         </div>
       </div>
@@ -543,6 +645,6 @@
     <script src="./js/menu.js"></script>
     <script>
       AOS.init();
-    </script> 
+    </script>
   </body>
 </html>

@@ -263,8 +263,18 @@ transition-property: opacity;
 }
 
 &__icon {
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 14px;
+  fill: $text-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+&__icons{
+width: 14px;
+height: 10px;
   fill: $text-color;
   transition-property: fill;
   transition-duration: 250ms;
